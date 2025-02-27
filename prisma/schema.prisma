@@ -1,0 +1,322 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+// User model and authentication
+model User {
+    id                  String            @id @default(uuid())
+    email               String            @unique
+    password            String
+    firstName           String
+    lastName            String
+    profileImage        String?
+    role                UserRole          @default(USER)
+    coins               Int               @default(0)
+    isEmailVerified     Boolean           @default(false)
+    createdAt           DateTime          @default(now())
+    updatedAt           DateTime          @updatedAt
+    learningPlans       LearningPlan[]
+    completedResources  UserResource[]
+    mockInterviews      MockInterview[]
+    quizAttempts        QuizAttempt[]
+    achievementProgress UserAchievement[]
+    supportQuestions    SupportQuestion[]
+
+    @@map("users")
+}
+
+enum UserRole {
+    USER
+    ADMIN
+}
+
+// Learning Plans
+model LearningPlan {
+    id           String      @id @default(uuid())
+    userId       String
+    user         User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+    track        Track
+    durationDays Int
+    startDate    DateTime    @default(now())
+    endDate      DateTime
+    isActive     Boolean     @default(true)
+    currentDay   Int         @default(1)
+    progress     Float       @default(0)
+    createdAt    DateTime    @default(now())
+    updatedAt    DateTime    @updatedAt
+    dailyPlans   DailyPlan[]
+
+    @@map("learning_plans")
+}
+
+enum Track {
+    SERVICE_BASED
+    PRODUCT_BASED
+    FAANG
+    BIG_4
+    GENERIC
+}
+
+// Daily Learning Structure
+model DailyPlan {
+    id                String             @id @default(uuid())
+    learningPlanId    String
+    learningPlan      LearningPlan       @relation(fields: [learningPlanId], references: [id], onDelete: Cascade)
+    dayNumber         Int
+    isUnlocked        Boolean            @default(false)
+    isCompleted       Boolean            @default(false)
+    learningResources Resource[]         @relation("DailyLearningResources")
+    practiceResources Resource[]         @relation("DailyPracticeResources")
+    quiz              Quiz?
+    mockInterview     MockInterview?     @relation(fields: [mockInterviewId], references: [id])
+    createdAt         DateTime           @default(now())
+    updatedAt         DateTime           @updatedAt
+    mockInterviewId   String?
+    InterviewTemplate InterviewTemplate?
+
+    @@unique([learningPlanId, dayNumber])
+    @@map("daily_plans")
+}
+
+// Resources (videos, blogs, leetcode)
+model Resource {
+    id                String         @id @default(uuid())
+    title             String
+    description       String
+    type              ResourceType
+    url               String
+    duration          Int? // in minutes for videos, estimated reading time for blogs
+    difficulty        Difficulty? // mainly for leetcode questions
+    learningPlanDay   DailyPlan?     @relation("DailyLearningResources", fields: [learningPlanDayId], references: [id])
+    learningPlanDayId String?
+    practicePlanDay   DailyPlan?     @relation("DailyPracticeResources", fields: [practicePlanDayId], references: [id])
+    practicePlanDayId String?
+    completedBy       UserResource[]
+    createdAt         DateTime       @default(now())
+    updatedAt         DateTime       @updatedAt
+
+    @@map("resources")
+}
+
+enum ResourceType {
+    VIDEO
+    BLOG
+    LEETCODE
+}
+
+enum Difficulty {
+    EASY
+    MEDIUM
+    HARD
+}
+
+// Track completed resources by users
+model UserResource {
+    id          String   @id @default(uuid())
+    userId      String
+    user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+    resourceId  String
+    resource    Resource @relation(fields: [resourceId], references: [id], onDelete: Cascade)
+    completedAt DateTime @default(now())
+
+    @@unique([userId, resourceId])
+    @@map("user_resources")
+}
+
+// Quizzes for practice
+model Quiz {
+    id          String         @id @default(uuid())
+    title       String
+    description String
+    dailyPlanId String         @unique
+    dailyPlan   DailyPlan      @relation(fields: [dailyPlanId], references: [id], onDelete: Cascade)
+    questions   QuizQuestion[]
+    attempts    QuizAttempt[]
+    createdAt   DateTime       @default(now())
+    updatedAt   DateTime       @updatedAt
+
+    @@map("quizzes")
+}
+
+model QuizQuestion {
+    id            String         @id @default(uuid())
+    quizId        String
+    quiz          Quiz           @relation(fields: [quizId], references: [id], onDelete: Cascade)
+    question      String
+    options       Json // Array of options
+    correctAnswer String
+    explanation   String?
+    createdAt     DateTime       @default(now())
+    updatedAt     DateTime       @updatedAt
+    responses     QuizResponse[]
+
+    @@map("quiz_questions")
+}
+
+model QuizAttempt {
+    id          String         @id @default(uuid())
+    userId      String
+    user        User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+    quizId      String
+    quiz        Quiz           @relation(fields: [quizId], references: [id], onDelete: Cascade)
+    score       Float
+    isCompleted Boolean        @default(false)
+    startedAt   DateTime       @default(now())
+    completedAt DateTime?
+    responses   QuizResponse[]
+
+    @@map("quiz_attempts")
+}
+
+model QuizResponse {
+    id             String       @id @default(uuid())
+    quizAttemptId  String
+    quizAttempt    QuizAttempt  @relation(fields: [quizAttemptId], references: [id], onDelete: Cascade)
+    questionId     String
+    question       QuizQuestion @relation(fields: [questionId], references: [id], onDelete: Cascade)
+    selectedAnswer String
+    isCorrect      Boolean
+    createdAt      DateTime     @default(now())
+
+    @@map("quiz_responses")
+}
+
+// AI Mock Interview System
+model InterviewTemplate {
+    id             String              @id @default(uuid())
+    title          String
+    description    String?
+    duration       Int // in minutes
+    dailyPlanId    String?             @unique
+    dailyPlan      DailyPlan?          @relation(fields: [dailyPlanId], references: [id])
+    questions      InterviewQuestion[]
+    mockInterviews MockInterview[]
+    isActive       Boolean             @default(true)
+    createdAt      DateTime            @default(now())
+    updatedAt      DateTime            @updatedAt
+
+    @@map("interview_templates")
+}
+
+model MockInterview {
+    id           String              @id @default(uuid())
+    userId       String
+    user         User                @relation(fields: [userId], references: [id], onDelete: Cascade)
+    templateId   String
+    template     InterviewTemplate   @relation(fields: [templateId], references: [id])
+    status       InterviewStatus     @default(SCHEDULED)
+    scheduledAt  DateTime
+    startedAt    DateTime?
+    completedAt  DateTime?
+    isCompleted  Boolean             @default(false)
+    feedback     Json? // Structured feedback  
+    proctorNotes Json? // Proctoring issues detected
+    overallScore Float?
+    responses    InterviewResponse[]
+    createdAt    DateTime            @default(now())
+    updatedAt    DateTime            @updatedAt
+    DailyPlan    DailyPlan[]
+
+    @@map("mock_interviews")
+}
+
+enum InterviewStatus {
+    SCHEDULED
+    IN_PROGRESS
+    COMPLETED
+    CANCELLED
+}
+
+model InterviewQuestion {
+    id                String              @id @default(uuid())
+    templateId        String
+    interviewTemplate InterviewTemplate   @relation(fields: [templateId], references: [id], onDelete: Cascade)
+    question          String
+    type              QuestionType
+    codeSnippet       String? // For code-based questions
+    expectedAnswer    String?
+    order             Int
+    responses         InterviewResponse[]
+
+    @@map("interview_questions")
+}
+
+model InterviewResponse {
+    id              String            @id @default(uuid())
+    mockInterviewId String
+    mockInterview   MockInterview     @relation(fields: [mockInterviewId], references: [id], onDelete: Cascade)
+    questionId      String
+    question        InterviewQuestion @relation(fields: [questionId], references: [id], onDelete: Cascade)
+    userResponse    String
+    feedback        String?
+    score           Float?
+    startedAt       DateTime          @default(now())
+    completedAt     DateTime?
+    isComplete      Boolean           @default(false)
+    createdAt       DateTime          @default(now())
+    updatedAt       DateTime          @updatedAt
+
+    @@map("interview_responses")
+}
+
+enum QuestionType {
+    VERBAL
+    CODE
+    TEXT
+}
+
+// Gamification
+model Achievement {
+    id             String            @id @default(uuid())
+    title          String
+    description    String
+    badgeImage     String
+    requiredAction String
+    requiredCount  Int
+    coinReward     Int
+    users          UserAchievement[]
+    createdAt      DateTime          @default(now())
+    updatedAt      DateTime          @updatedAt
+
+    @@map("achievements")
+}
+
+model UserAchievement {
+    id            String      @id @default(uuid())
+    userId        String
+    user          User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+    achievementId String
+    achievement   Achievement @relation(fields: [achievementId], references: [id], onDelete: Cascade)
+    progress      Int         @default(0)
+    isCompleted   Boolean     @default(false)
+    completedAt   DateTime?
+    createdAt     DateTime    @default(now())
+    updatedAt     DateTime    @updatedAt
+
+    @@unique([userId, achievementId])
+    @@map("user_achievements")
+}
+
+// Support System
+model SupportQuestion {
+    id         String   @id @default(uuid())
+    userId     String
+    user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+    resourceId String? // Optional relationship to resource
+    question   String
+    response   String?
+    isAnswered Boolean  @default(false)
+    createdAt  DateTime @default(now())
+    updatedAt  DateTime @updatedAt
+
+    @@map("support_questions")
+}
+
