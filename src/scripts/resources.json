@@ -1,0 +1,954 @@
+[
+  {
+    "id": "two-sum",
+    "topicName": "Two Sum",
+    "topicDescription": "Arrays and Strings: Manipulation Techniques, Sliding Window, Two Pointers",
+    "url": "https://leetcode.com/problems/two-sum/",
+    "type": "LEETCODE_QUESTION",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "two-sum-video",
+    "topicName": "Two Sum - Video Tutorial",
+    "topicDescription": "Arrays and Strings: Manipulation Techniques, Sliding Window, Two Pointers",
+    "url": "https://www.youtube.com/watch?v=UXDSeD9mN-k",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "best-time-buy-sell-stock",
+    "topicName": "Best Time to Buy and Sell Stock",
+    "topicDescription": "Arrays and Strings: Manipulation Techniques, Sliding Window, Two Pointers",
+    "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+    "type": "LEETCODE_QUESTION",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "best-time-buy-sell-stock-video",
+    "topicName": "Best Time to Buy and Sell Stock - Video Tutorial",
+    "topicDescription": "Arrays and Strings: Manipulation Techniques, Sliding Window, Two Pointers",
+    "url": "https://www.youtube.com/watch?v=excAOvwF_Wk",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "subarray-sum-equals-k",
+    "topicName": "Subarray Sum Equals K",
+    "topicDescription": "Arrays and Strings: Manipulation Techniques, Sliding Window, Two Pointers",
+    "url": "https://leetcode.com/problems/subarray-sum-equals-k/",
+    "type": "LEETCODE_QUESTION",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "subarray-sum-equals-k-video",
+    "topicName": "Subarray Sum Equals K - Video Tutorial",
+    "topicDescription": "Arrays and Strings: Manipulation Techniques, Sliding Window, Two Pointers",
+    "url": "https://www.youtube.com/watch?v=xvNwoz-ufXA",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "longest-palindromic-substring",
+    "topicName": "Longest Palindromic Substring",
+    "topicDescription": "Arrays and Strings: Manipulation Techniques, Sliding Window, Two Pointers",
+    "url": "https://leetcode.com/problems/longest-palindromic-substring/",
+    "type": "LEETCODE_QUESTION",
+    "suitableFor": "FAANG"
+  },
+  {
+    "id": "longest-palindromic-substring-video",
+    "topicName": "Longest Palindromic Substring - Video Tutorial",
+    "topicDescription": "Arrays and Strings: Manipulation Techniques, Sliding Window, Two Pointers",
+    "url": "https://www.youtube.com/watch?v=6i_T5kkfv4A",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "FAANG"
+  },
+  {
+    "id": "move-zeroes",
+    "topicName": "Move Zeroes",
+    "topicDescription": "Arrays and Strings: Manipulation Techniques, Sliding Window, Two Pointers",
+    "url": "https://leetcode.com/problems/move-zeroes/",
+    "type": "LEETCODE_QUESTION",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "move-zeroes-video",
+    "topicName": "Move Zeroes - Video Tutorial",
+    "topicDescription": "Arrays and Strings: Manipulation Techniques, Sliding Window, Two Pointers",
+    "url": "https://youtu.be/wvcQg43_V8U?si=Y26uTXkKPKDvH5Xr&t=1636",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "remove-duplicates-sorted-array",
+    "topicName": "Remove Duplicates from Sorted Array",
+    "topicDescription": "Arrays and Strings: Manipulation Techniques, Sliding Window, Two Pointers",
+    "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
+    "type": "LEETCODE_QUESTION",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "remove-duplicates-sorted-array-video",
+    "topicName": "Remove Duplicates from Sorted Array - Video Tutorial",
+    "topicDescription": "Arrays and Strings: Manipulation Techniques, Sliding Window, Two Pointers",
+    "url": "https://www.youtube.com/watch?v=37E9ckMDdTk",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "spiral-matrix",
+    "topicName": "Spiral Matrix",
+    "topicDescription": "Arrays and Strings: Matrix Operations, Spiral Traversal, Rotation",
+    "url": "https://leetcode.com/problems/spiral-matrix/",
+    "type": "LEETCODE_QUESTION",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "spiral-matrix-video",
+    "topicName": "Spiral Matrix - Video Tutorial",
+    "topicDescription": "Arrays and Strings: Matrix Operations, Spiral Traversal, Rotation",
+    "url": "https://www.youtube.com/watch?v=3Zv-s9UUrFM",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "rotate-image",
+    "topicName": "Rotate Image",
+    "topicDescription": "Arrays and Strings: Matrix Operations, Spiral Traversal, Rotation",
+    "url": "https://leetcode.com/problems/rotate-image/",
+    "type": "LEETCODE_QUESTION",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "rotate-image-video",
+    "topicName": "Rotate Image - Video Tutorial",
+    "topicDescription": "Arrays and Strings: Matrix Operations, Spiral Traversal, Rotation",
+    "url": "https://www.youtube.com/watch?v=Z0R2u6gd3GU",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "set-matrix-zeroes",
+    "topicName": "Set Matrix Zeroes",
+    "topicDescription": "Arrays and Strings: Matrix Operations, Spiral Traversal, Rotation",
+    "url": "https://leetcode.com/problems/set-matrix-zeroes/",
+    "type": "LEETCODE_QUESTION",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "set-matrix-zeroes-video",
+    "topicName": "Set Matrix Zeroes - Video Tutorial",
+    "topicDescription": "Arrays and Strings: Matrix Operations, Spiral Traversal, Rotation",
+    "url": "https://www.youtube.com/watch?v=N0MgLvceX7M",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "search-2d-matrix",
+    "topicName": "Search a 2D Matrix",
+    "topicDescription": "Arrays and Strings: Matrix Operations, Spiral Traversal, Rotation",
+    "url": "https://leetcode.com/problems/search-a-2d-matrix/",
+    "type": "LEETCODE_QUESTION",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "search-2d-matrix-video",
+    "topicName": "Search a 2D Matrix - Video Tutorial",
+    "topicDescription": "Arrays and Strings: Matrix Operations, Spiral Traversal, Rotation",
+    "url": "https://www.youtube.com/watch?v=JXU4Akft7yk",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "valid-sudoku",
+    "topicName": "Valid Sudoku",
+    "topicDescription": "Arrays and Strings: Matrix Operations, Spiral Traversal, Rotation",
+    "url": "https://leetcode.com/problems/valid-sudoku/",
+    "type": "LEETCODE_QUESTION",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "valid-sudoku-video",
+    "topicName": "Valid Sudoku - Video Tutorial",
+    "topicDescription": "Arrays and Strings: Matrix Operations, Spiral Traversal, Rotation",
+    "url": "https://www.youtube.com/watch?v=TjFXEUCMqI8",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "implement-strstr",
+    "topicName": "Implement strStr()",
+    "topicDescription": "Arrays and Strings: String Matching Algorithms (KMP, Rabin-Karp)",
+    "url": "https://leetcode.com/problems/implement-strstr/",
+    "type": "LEETCODE_QUESTION",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "implement-strstr-video",
+    "topicName": "Implement strStr() - Video Tutorial",
+    "topicDescription": "Arrays and Strings: String Matching Algorithms (KMP, Rabin-Karp)",
+    "url": "https://www.youtube.com/watch?v=9G2f1ivj5H4",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "repeated-string-match",
+    "topicName": "Repeated String Match",
+    "topicDescription": "Arrays and Strings: String Matching Algorithms (KMP, Rabin-Karp)",
+    "url": "https://leetcode.com/problems/repeated-string-match/",
+    "type": "LEETCODE_QUESTION",
+    "suitableFor": "FAANG"
+  },
+  {
+    "id": "repeated-string-match-video",
+    "topicName": "Repeated String Match - Video Tutorial",
+    "topicDescription": "Arrays and Strings: String Matching Algorithms (KMP, Rabin-Karp)",
+    "url": "https://www.youtube.com/watch?v=Y4J7_1SyTEk",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "FAANG"
+  },
+  {
+    "id": "longest-happy-prefix",
+    "topicName": "Longest Happy Prefix",
+    "topicDescription": "Arrays and Strings: String Matching Algorithms (KMP, Rabin-Karp)",
+    "url": "https://leetcode.com/problems/longest-happy-prefix/",
+    "type": "LEETCODE_QUESTION",
+    "suitableFor": "BIG_4"
+  },
+  {
+    "id": "longest-happy-prefix-video",
+    "topicName": "Longest Happy Prefix - Video Tutorial",
+    "topicDescription": "Arrays and Strings: String Matching Algorithms (KMP, Rabin-Karp)",
+    "url": "https://www.youtube.com/watch?v=JEpzIoudXVo",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "BIG_4"
+  },
+  {
+    "id": "find-index-first-occurrence",
+    "topicName": "Find the Index of the First Occurrence in a String",
+    "topicDescription": "Arrays and Strings: String Matching Algorithms (KMP, Rabin-Karp)",
+    "url": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/",
+    "type": "LEETCODE_QUESTION",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "find-index-first-occurrence-video",
+    "topicName": "Find the Index of the First Occurrence in a String - Video Tutorial",
+    "topicDescription": "Arrays and Strings: String Matching Algorithms (KMP, Rabin-Karp)",
+    "url": "https://www.youtube.com/watch?v=Gjkhm1gYIMw",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "shortest-palindrome",
+    "topicName": "Shortest Palindrome",
+    "topicDescription": "Arrays and Strings: String Matching Algorithms (KMP, Rabin-Karp)",
+    "url": "https://leetcode.com/problems/shortest-palindrome/",
+    "type": "LEETCODE_QUESTION",
+    "suitableFor": "FAANG"
+  },
+  {
+    "id": "shortest-palindrome-video",
+    "topicName": "Shortest Palindrome - Video Tutorial",
+    "topicDescription": "Arrays and Strings: String Matching Algorithms (KMP, Rabin-Karp)",
+    "url": "https://www.youtube.com/watch?v=BDNehaLxvOY",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "FAANG"
+  },
+  {
+    "id": "reverse-linked-list",
+    "topicName": "Reverse Linked List",
+    "topicDescription": "Linked Lists: Singly, Doubly, and Circular Linked Lists",
+    "url": "https://leetcode.com/problems/reverse-linked-list/",
+    "type": "LEETCODE_QUESTION",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "reverse-linked-list-video",
+    "topicName": "Reverse Linked List - Video Tutorial",
+    "topicDescription": "Linked Lists: Singly, Doubly, and Circular Linked Lists",
+    "url": "https://www.youtube.com/watch?v=D2vI2DNJGd8",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "merge-two-sorted-lists",
+    "topicName": "Merge Two Sorted Lists",
+    "topicDescription": "Linked Lists: Singly, Doubly, and Circular Linked Lists",
+    "url": "https://leetcode.com/problems/merge-two-sorted-lists/",
+    "type": "LEETCODE_QUESTION",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "merge-two-sorted-lists-video",
+    "topicName": "Merge Two Sorted Lists - Video Tutorial",
+    "topicDescription": "Linked Lists: Singly, Doubly, and Circular Linked Lists",
+    "url": "https://www.youtube.com/watch?v=jXu-H7XuClE",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "linked-list-cycle",
+    "topicName": "Linked List Cycle",
+    "topicDescription": "Linked Lists: Singly, Doubly, and Circular Linked Lists",
+    "url": "https://leetcode.com/problems/linked-list-cycle/",
+    "type": "LEETCODE_QUESTION",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "linked-list-cycle-video",
+    "topicName": "Linked List Cycle - Video Tutorial",
+    "topicDescription": "Linked Lists: Singly, Doubly, and Circular Linked Lists",
+    "url": "https://www.youtube.com/watch?v=wiOo4DC5GGA",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "stl-containers",
+    "topicName": "STL Containers, Algorithms, and Iterators",
+    "topicDescription": "C++ Topics: Standard Template Library (STL)",
+    "url": "https://www.geeksforgeeks.org/the-c-standard-template-library-stl/",
+    "type": "DOC",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "stl-containers-video",
+    "topicName": "STL Containers, Algorithms, and Iterators - Video Tutorial",
+    "topicDescription": "C++ Topics: Standard Template Library (STL)",
+    "url": "https://www.youtube.com/watch?v=okhdtEk1iKk",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "cpp-pointers",
+    "topicName": "Pointers in C++",
+    "topicDescription": "C++ Topics: Memory Management and Pointers",
+    "url": "https://www.geeksforgeeks.org/cpp-pointers/",
+    "type": "DOC",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "memory-management",
+    "topicName": "Memory Management",
+    "topicDescription": "C++ Topics: Memory Management and Pointers",
+    "url": "https://www.geeksforgeeks.org/memory-management-in-operating-system/",
+    "type": "DOC",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "cpp-pointers-blog",
+    "topicName": "Introduction to Pointers",
+    "topicDescription": "C++ Topics: Memory Management and Pointers",
+    "url": "https://www.learncpp.com/cpp-tutorial/pointers/",
+    "type": "BLOG",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "memory-management-os-blog",
+    "topicName": "Memory Management in OS",
+    "topicDescription": "C++ Topics: Memory Management and Pointers",
+    "url": "https://medium.com/@The_Anshuman/memory-management-in-os-450655fbc338",
+    "type": "BLOG",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "pointers-video",
+    "topicName": "Pointers in C++ - Video Tutorial",
+    "topicDescription": "C++ Topics: Memory Management and Pointers",
+    "url": "https://www.youtube.com/watch?v=945JVkEDwGQ",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "memory-management-video",
+    "topicName": "Memory Management - Video Tutorial",
+    "topicDescription": "C++ Topics: Memory Management and Pointers",
+    "url": "https://www.youtube.com/watch?v=EvYmTCx9BFs",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "java-collections",
+    "topicName": "Java Collections Framework",
+    "topicDescription": "Java Topics: Collections Framework",
+    "url": "https://www.geeksforgeeks.org/collections-in-java-2/",
+    "type": "DOC",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "java-collections-blog",
+    "topicName": "Java Collections",
+    "topicDescription": "Java Topics: Collections Framework",
+    "url": "https://www.baeldung.com/java-collections",
+    "type": "BLOG",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "java-collections-video",
+    "topicName": "Java Collections Framework - Video Tutorial",
+    "topicDescription": "Java Topics: Collections Framework",
+    "url": "https://www.youtube.com/watch?v=VphowcSkBX4",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "java-multithreading",
+    "topicName": "Multithreading in Java",
+    "topicDescription": "Java Topics: Concurrency Utilities and Threading",
+    "url": "https://www.geeksforgeeks.org/multithreading-in-java/",
+    "type": "DOC",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "java-concurrency-blog",
+    "topicName": "Java Concurrency",
+    "topicDescription": "Java Topics: Concurrency Utilities and Threading",
+    "url": "http://tutorials.jenkov.com/java-concurrency/index.html",
+    "type": "BLOG",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "java-multithreading-video",
+    "topicName": "Multithreading in Java - Video Tutorial",
+    "topicDescription": "Java Topics: Concurrency Utilities and Threading",
+    "url": "https://www.youtube.com/watch?v=YDH7f9dTXAs",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "python-list-comprehension",
+    "topicName": "List Comprehensions in Python",
+    "topicDescription": "Python Topics: List Comprehensions, Generators, Decorators",
+    "url": "https://www.geeksforgeeks.org/python-list-comprehension/",
+    "type": "DOC",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "python-list-comprehension-video",
+    "topicName": "List Comprehensions in Python - Video Tutorial",
+    "topicDescription": "Python Topics: List Comprehensions, Generators, Decorators",
+    "url": "https://www.youtube.com/watch?v=uhvljGKWges",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "python-generators",
+    "topicName": "Generators in Python",
+    "topicDescription": "Python Topics: List Comprehensions, Generators, Decorators",
+    "url": "https://www.geeksforgeeks.org/generators-in-python/",
+    "type": "DOC",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "python-generators-video",
+    "topicName": "Generators in Python - Video Tutorial",
+    "topicDescription": "Python Topics: List Comprehensions, Generators, Decorators",
+    "url": "https://www.youtube.com/watch?v=eF7y34nS724",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "frontend-html",
+    "topicName": "HTML",
+    "topicDescription": "Web Development: Frontend",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    "type": "DOC",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "frontend-html-video",
+    "topicName": "HTML - Video Tutorial",
+    "topicDescription": "Web Development: Frontend",
+    "url": "https://www.youtube.com/watch?v=HcOc7P5BMi4",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "frontend-html-blog",
+    "topicName": "HTML for Beginners",
+    "topicDescription": "Web Development: Frontend",
+    "url": "https://www.theblogstarter.com/html-for-beginners/",
+    "type": "BLOG",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "frontend-css",
+    "topicName": "CSS",
+    "topicDescription": "Web Development: Frontend",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "type": "DOC",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "frontend-css-video",
+    "topicName": "CSS - Video Tutorial",
+    "topicDescription": "Web Development: Frontend",
+    "url": "https://www.youtube.com/watch?v=ESnrn1kAD4E",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "frontend-css-blog",
+    "topicName": "CSS Tricks",
+    "topicDescription": "Web Development: Frontend",
+    "url": "https://css-tricks.com/",
+    "type": "BLOG",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "backend-nodejs",
+    "topicName": "Node.js",
+    "topicDescription": "Web Development: Backend",
+    "url": "https://nodejs.org/docs/latest/api/",
+    "type": "DOC",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "backend-nodejs-video",
+    "topicName": "Node.js - Video Tutorial",
+    "topicDescription": "Web Development: Backend",
+    "url": "https://www.youtube.com/watch?v=32M1al-Y6Ag",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "backend-nodejs-blog",
+    "topicName": "Node.js Blog",
+    "topicDescription": "Web Development: Backend",
+    "url": "https://nodejs.medium.com/",
+    "type": "BLOG",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "backend-expressjs",
+    "topicName": "Express.js",
+    "topicDescription": "Web Development: Backend",
+    "url": "https://expressjs.com/",
+    "type": "DOC",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "backend-expressjs-video",
+    "topicName": "Express.js - Video Tutorial",
+    "topicDescription": "Web Development: Backend",
+    "url": "https://www.youtube.com/watch?v=pKJ4GGyDgJo",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "ml-feature-engineering",
+    "topicName": "Feature Engineering and Selection",
+    "topicDescription": "Machine Learning/AI: Fundamentals",
+    "url": "https://www.geeksforgeeks.org/what-is-feature-engineering/",
+    "type": "DOC",
+    "suitableFor": "BIG_4"
+  },
+  {
+    "id": "ml-feature-engineering-video",
+    "topicName": "Feature Engineering and Selection - Video Tutorial",
+    "topicDescription": "Machine Learning/AI: Fundamentals",
+    "url": "https://www.youtube.com/watch?v=vZDDmULsCUU",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "BIG_4"
+  },
+  {
+    "id": "ml-regularization",
+    "topicName": "Regularization Techniques (L1, L2)",
+    "topicDescription": "Machine Learning/AI: Fundamentals",
+    "url": "https://www.geeksforgeeks.org/regularization-in-machine-learning/",
+    "type": "DOC",
+    "suitableFor": "BIG_4"
+  },
+  {
+    "id": "system-design-solid",
+    "topicName": "SOLID Principles",
+    "topicDescription": "System Design: Design Principles",
+    "url": "https://www.geeksforgeeks.org/solid-principle-in-programming-understand-with-real-life-examples/",
+    "type": "DOC",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "system-design-solid-video",
+    "topicName": "SOLID Principles - Video Tutorial",
+    "topicDescription": "System Design: Design Principles",
+    "url": "https://www.youtube.com/watch?v=XI7zep97c-Y",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "system-design-patterns",
+    "topicName": "Design Patterns",
+    "topicDescription": "System Design: Design Principles",
+    "url": "https://www.geeksforgeeks.org/system-design-tutorial/",
+    "type": "DOC",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "system-design-patterns-video",
+    "topicName": "Design Patterns - Video Tutorial",
+    "topicDescription": "System Design: Design Principles",
+    "url": "https://www.youtube.com/watch?v=NU_1StN5Tkk",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "system-design-scaling",
+    "topicName": "Horizontal vs Vertical Scaling",
+    "topicDescription": "System Design: Scalability",
+    "url": "https://www.geeksforgeeks.org/system-design-horizontal-and-vertical-scaling/",
+    "type": "DOC",
+    "suitableFor": "FAANG"
+  },
+  {
+    "id": "solid-principles",
+    "topicName": "SOLID Principles",
+    "topicDescription": "System Design: Design Principles",
+    "url": "https://www.geeksforgeeks.org/solid-principle-in-programming-understand-with-real-life-examples/",
+    "type": "DOC",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "solid-principles-video",
+    "topicName": "SOLID Principles - Video Tutorial",
+    "topicDescription": "System Design: Design Principles",
+    "url": "https://www.youtube.com/watch?v=XI7zep97c-Y",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "design-patterns",
+    "topicName": "Design Patterns",
+    "topicDescription": "System Design: Design Principles",
+    "url": "https://www.geeksforgeeks.org/system-design-tutorial/",
+    "type": "DOC",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "design-patterns-video",
+    "topicName": "Design Patterns - Video Tutorial",
+    "topicDescription": "System Design: Design Principles",
+    "url": "https://www.youtube.com/watch?v=NU_1StN5Tkk",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "horizontal-vertical-scaling",
+    "topicName": "Horizontal vs Vertical Scaling",
+    "topicDescription": "System Design: Scalability",
+    "url": "https://www.geeksforgeeks.org/system-design-horizontal-and-vertical-scaling/",
+    "type": "DOC",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "horizontal-vertical-scaling-video",
+    "topicName": "Horizontal vs Vertical Scaling - Video Tutorial",
+    "topicDescription": "System Design: Scalability",
+    "url": "https://www.youtube.com/watch?v=xpDnVSmNFX0",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "load-balancing",
+    "topicName": "Load Balancing Strategies",
+    "topicDescription": "System Design: Scalability",
+    "url": "https://medium.com/@abhirup.acharya009/load-balancing-system-design-fundamentals-d64674227c36",
+    "type": "BLOG",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "load-balancing-video",
+    "topicName": "Load Balancing Strategies - Video Tutorial",
+    "topicDescription": "System Design: Scalability",
+    "url": "https://www.youtube.com/watch?v=K0Ta65OqQkY",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "caching-mechanisms",
+    "topicName": "Caching Mechanisms",
+    "topicDescription": "System Design: Scalability",
+    "url": "https://www.geeksforgeeks.org/caching-system-design-concept-for-beginners/",
+    "type": "DOC",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "caching-mechanisms-video",
+    "topicName": "Caching Mechanisms - Video Tutorial",
+    "topicDescription": "System Design: Scalability",
+    "url": "https://www.youtube.com/watch?v=Ez1GK2imrsY",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "database-sharding",
+    "topicName": "Database Sharding and Partitioning",
+    "topicDescription": "System Design: Scalability",
+    "url": "https://medium.com/@gabasidhant123/system-design-series-sharding-and-partitioning-a-deep-dive-into-data-scalability-123f63640664",
+    "type": "BLOG",
+    "suitableFor": "FAANG"
+  },
+  {
+    "id": "database-sharding-video",
+    "topicName": "Database Sharding and Partitioning - Video Tutorial",
+    "topicDescription": "System Design: Scalability",
+    "url": "https://www.youtube.com/watch?v=wXvljefXyEo",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "FAANG"
+  },
+  {
+    "id": "fault-tolerance",
+    "topicName": "Fault Tolerance and Redundancy",
+    "topicDescription": "System Design: Reliability",
+    "url": "https://www.geeksforgeeks.org/basic-fault-tolerant-software-techniques/",
+    "type": "DOC",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "fault-tolerance-video",
+    "topicName": "Fault Tolerance and Redundancy - Video Tutorial",
+    "topicDescription": "System Design: Reliability",
+    "url": "https://www.youtube.com/watch?v=7vIzGmxdUvI",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "circuit-breakers",
+    "topicName": "Circuit Breakers",
+    "topicDescription": "System Design: Reliability",
+    "url": "https://medium.com/geekculture/design-patterns-for-microservices-circuit-breaker-pattern-276249ffab33",
+    "type": "BLOG",
+    "suitableFor": "FAANG"
+  },
+  {
+    "id": "circuit-breakers-video",
+    "topicName": "Circuit Breakers - Video Tutorial",
+    "topicDescription": "System Design: Reliability",
+    "url": "https://www.youtube.com/watch?v=dJI2saoM5_k",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "FAANG"
+  },
+  {
+    "id": "bulkheads",
+    "topicName": "Bulkheads",
+    "topicDescription": "System Design: Reliability",
+    "url": "https://www.geeksforgeeks.org/bulkhead-pattern/",
+    "type": "DOC",
+    "suitableFor": "FAANG"
+  },
+  {
+    "id": "bulkheads-video",
+    "topicName": "Bulkheads - Video Tutorial",
+    "topicDescription": "System Design: Reliability",
+    "url": "https://www.youtube.com/watch?v=2I3-lbnMXec&t=260s",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "FAANG"
+  },
+  {
+    "id": "distributed-logging",
+    "topicName": "Distributed Logging and Monitoring",
+    "topicDescription": "System Design: Reliability",
+    "url": "https://medium.com/@krrishan7495/distributed-logging-designing-a-robust-system-for-enhanced-monitoring-64ddb0838882",
+    "type": "BLOG",
+    "suitableFor": "FAANG"
+  },
+  {
+    "id": "distributed-logging-video",
+    "topicName": "Distributed Logging and Monitoring - Video Tutorial",
+    "topicDescription": "System Design: Reliability",
+    "url": "https://www.youtube.com/watch?v=p_q-n09B8KA",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "FAANG"
+  },
+  {
+    "id": "url-shortener",
+    "topicName": "URL Shortener",
+    "topicDescription": "System Design: High-Level Design",
+    "url": "https://systemdesign.one/url-shortening-system-design/",
+    "type": "DOC",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "url-shortener-video",
+    "topicName": "URL Shortener - Video Tutorial",
+    "topicDescription": "System Design: High-Level Design",
+    "url": "https://www.youtube.com/watch?v=JQDHz72OA3c",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "social-media-platforms",
+    "topicName": "Social Media Platforms",
+    "topicDescription": "System Design: High-Level Design",
+    "url": "https://www.geeksforgeeks.org/design-scalable-system-like-instagram/",
+    "type": "DOC",
+    "suitableFor": "FAANG"
+  },
+  {
+    "id": "social-media-platforms-video",
+    "topicName": "Social Media Platforms - Video Tutorial",
+    "topicDescription": "System Design: High-Level Design",
+    "url": "https://www.youtube.com/watch?v=yk6tkOhzVyA",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "FAANG"
+  },
+  {
+    "id": "e-commerce-systems",
+    "topicName": "E-commerce Systems",
+    "topicDescription": "System Design: High-Level Design",
+    "url": "https://www.geeksforgeeks.org/e-commerce-architecture-system-design-for-e-commerce-website/",
+    "type": "DOC",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "e-commerce-systems-video",
+    "topicName": "E-commerce Systems - Video Tutorial",
+    "topicDescription": "System Design: High-Level Design",
+    "url": "https://www.youtube.com/watch?v=E-KW1O3hLSg",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "ride-sharing-applications",
+    "topicName": "Ride-sharing Applications",
+    "topicDescription": "System Design: High-Level Design",
+    "url": "https://www.geeksforgeeks.org/system-design-of-uber-app-uber-system-architecture/",
+    "type": "DOC",
+    "suitableFor": "FAANG"
+  },
+  {
+    "id": "ride-sharing-applications-video",
+    "topicName": "Ride-sharing Applications - Video Tutorial",
+    "topicDescription": "System Design: High-Level Design",
+    "url": "https://www.youtube.com/watch?v=R_agd5qZ26Y",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "FAANG"
+  },
+  {
+    "id": "chat-applications",
+    "topicName": "Chat Applications",
+    "topicDescription": "System Design: High-Level Design",
+    "url": "https://www.cometchat.com/blog/chat-application-architecture-and-system-design",
+    "type": "BLOG",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "chat-applications-video",
+    "topicName": "Chat Applications - Video Tutorial",
+    "topicDescription": "System Design: High-Level Design",
+    "url": "https://www.youtube.com/watch?v=vvhC64hQZMk",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "video-streaming-services",
+    "topicName": "Video Streaming Services",
+    "topicDescription": "System Design: High-Level Design",
+    "url": "https://www.geeksforgeeks.org/system-design-netflix-a-complete-architecture/",
+    "type": "DOC",
+    "suitableFor": "FAANG"
+  },
+  {
+    "id": "video-streaming-services-video",
+    "topicName": "Video Streaming Services - Video Tutorial",
+    "topicDescription": "System Design: High-Level Design",
+    "url": "https://www.youtube.com/watch?v=jPKTo1iGQiE",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "FAANG"
+  },
+  {
+    "id": "number-systems",
+    "topicName": "Number Systems and Number Theory",
+    "topicDescription": "Aptitude and General Skills: Quantitative Aptitude - Mathematical Fundamentals",
+    "url": "https://www.indiabix.com/aptitude/problems-on-numbers/",
+    "type": "DOC",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "number-systems-video",
+    "topicName": "Number Systems and Number Theory - Video Tutorial",
+    "topicDescription": "Aptitude and General Skills: Quantitative Aptitude - Mathematical Fundamentals",
+    "url": "https://www.youtube.com/watch?v=39Hbzfik_zw",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "probability-statistics",
+    "topicName": "Probability and Statistics",
+    "topicDescription": "Aptitude and General Skills: Quantitative Aptitude - Mathematical Fundamentals",
+    "url": "https://www.indiabix.com/aptitude/probability/",
+    "type": "DOC",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "probability-statistics-video",
+    "topicName": "Probability and Statistics - Video Tutorial",
+    "topicDescription": "Aptitude and General Skills: Quantitative Aptitude - Mathematical Fundamentals",
+    "url": "https://www.youtube.com/watch?v=8Q-uhgxvV5s&t=4s",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "network-layers-protocol",
+    "topicName": "Detailed Protocol Analysis at Each Layer",
+    "topicDescription": "Computer Networks: Network Layers",
+    "url": "https://www.geeksforgeeks.org/network-protocols/",
+    "type": "DOC",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "network-layers-protocol-video",
+    "topicName": "Detailed Protocol Analysis at Each Layer - Video Tutorial",
+    "topicDescription": "Computer Networks: Network Layers",
+    "url": "https://www.youtube.com/watch?v=aUYwx9bYlGY",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "process-scheduling",
+    "topicName": "Scheduling Algorithms with Comparative Analysis",
+    "topicDescription": "Operating Systems: Process Management",
+    "url": "https://www.geeksforgeeks.org/comparison-of-different-cpu-scheduling-algorithms-in-os/",
+    "type": "DOC",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "process-scheduling-video",
+    "topicName": "Scheduling Algorithms with Comparative Analysis - Video Tutorial",
+    "topicDescription": "Operating Systems: Process Management",
+    "url": "https://www.youtube.com/watch?v=pPAKs7tT8sw",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "ipc-methods",
+    "topicName": "Inter-process Communication Methods",
+    "topicDescription": "Operating Systems: Process Management",
+    "url": "https://www.geeksforgeeks.org/inter-process-communication-ipc/",
+    "type": "DOC",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "ipc-methods-video",
+    "topicName": "Inter-process Communication Methods - Video Tutorial",
+    "topicDescription": "Operating Systems: Process Management",
+    "url": "https://www.youtube.com/watch?v=dJuYKfR8vec",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "PRODUCT_BASED"
+  },
+  {
+    "id": "virtual-memory",
+    "topicName": "Virtual Memory",
+    "topicDescription": "Operating Systems: Memory Management",
+    "url": "https://www.geeksforgeeks.org/virtual-memory-in-operating-system/",
+    "type": "DOC",
+    "suitableFor": "ALL"
+  },
+  {
+    "id": "virtual-memory-video",
+    "topicName": "Virtual Memory - Video Tutorial",
+    "topicDescription": "Operating Systems: Memory Management",
+    "url": "https://www.youtube.com/watch?v=o2_iCzS9-ZQ",
+    "type": "YOUTUBE_VIDEO",
+    "suitableFor": "ALL"
+  }
+]
