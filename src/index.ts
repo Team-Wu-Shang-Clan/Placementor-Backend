@@ -1,12 +1,35 @@
-import express from 'express';
+import { app } from './app';
+import { config } from './config';
+import { PrismaClient } from '@prisma/client';
 
-const app = express();
-const PORT = process.env.PORT || 3000;
+const prisma = new PrismaClient();
 
-app.get('/', (req, res) => {
-  res.send('Hello, Mentor!');
-});
+const startServer = async () => {
+  try {
+    await prisma.$connect();
+    console.log('Connected to database');
 
-app.listen(PORT, () => {
-  console.log(`🚀 Server is running at http://localhost:${PORT}`);
-});
+    const server = app.listen(config.port, () => {
+      console.log(`Server listening on port ${config.port}`);
+    });
+
+    const signals = ['SIGINT', 'SIGTERM'];
+    signals.forEach((signal) => {
+      process.on(signal, async () => {
+        console.log(`${signal} received, shutting down gracefully`);
+        server.close(async () => {
+          console.log('HTTP server closed');
+          await prisma.$disconnect();
+          console.log('Database connection closed');
+          process.exit(0);
+        });
+      });
+    });
+  } catch (error) {
+    console.error('Failed to start server:', error);
+    await prisma.$disconnect();
+    process.exit(1);
+  }
+};
+
+startServer();
