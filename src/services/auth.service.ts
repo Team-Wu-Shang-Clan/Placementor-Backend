@@ -15,7 +15,7 @@ const registerUser = async ({
     password: string;
     firstName: string;
     lastName: string;
-}): Promise<{ user: User; token: string }> => {
+}): Promise<{ user: User }> => {
     const existingUser = await prisma.user.findUnique({
         where: { email },
     });
@@ -37,9 +37,9 @@ const registerUser = async ({
 
     // await emailService.sendVerificationEmail(user.email, verificationToken);
 
-    const token = generateToken(user);
+    // const token = generateToken(user);
 
-    return { user, token };
+    return { user };
 };
 
 const loginUser = async (email: string, password: string): Promise<{ user: User; token: string }> => {

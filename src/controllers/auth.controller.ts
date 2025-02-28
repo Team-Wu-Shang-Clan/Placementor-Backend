@@ -7,7 +7,7 @@ const register = async (req: Request, res: Response) => {
     const { email, password, firstName, lastName } = req.body;
 
     try {
-        const { user, token } = await authService.registerUser({
+        const { user } = await authService.registerUser({
             email,
             password,
             firstName,
@@ -21,7 +21,6 @@ const register = async (req: Request, res: Response) => {
             message: 'User registered successfully. Please verify your email.',
             data: {
                 user: userWithoutPassword,
-                token,
             },
         });
     } catch (error) {
